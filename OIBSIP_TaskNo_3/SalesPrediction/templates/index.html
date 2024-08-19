@@ -1,0 +1,210 @@
+{% extends "nav.html" %}
+{% block content %}
+
+{% load static %}
+
+
+
+<!-- ***** Main Banner Area Start ***** -->
+<div class="pa-ban" id="top">
+
+    <div class="inner-content">
+        <br>
+        <br>
+        <h2>Sales forecasting for smarter <br>
+            <font style="color: rgb(255, 255, 255);">decisions!!</font>
+        </h2>
+        <span></span>
+
+    </div>
+</div>
+<!-- ***** Main Banner Area End ***** -->
+<!-- ***** Explore Area Starts ***** -->
+<section class="section" id="explore">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left-content">
+                    <h2>Explore Our Products</h2>
+                    <span> High-quality items attract positive reviews and customer interest, boosting your chances of
+                        visibility. Price your products competitively to stand out in comparison to similar offerings on
+                        the platform. Competitive pricing can attract more customers and improve sales performance,
+                        which platforms often prioritize for their explore pages.</span>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Discover top-tier quality and unbeatable prices at Big Mart's Explore section. Your gateway
+                            to premium products at the best value!</p>
+                    </div>
+                    <p>Well-structured listings improve organic search visibility within the platform and make it easier
+                        for customers to find your products. Additionally, encourage satisfied customers to leave
+                        reviews, as positive feedback enhances credibility and influences platform algorithms.</p>
+                    <p>Explore more than just products; discover a shopping experience tailored to your lifestyle. From
+                        trend-setting fashion to innovative gadgets and household essentials, our Explore section is
+                        your gateway to a world of possibilities. </p>
+                    <div class="main-border-button">
+                        <a href="products.html">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="right-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="leather">
+                                <h4>Beauty Products!</h4>
+                                <span>Latest Collection</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="first-image">
+                                <img src="{% static 'images/explore-image-01.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="second-image">
+                                <img src="{% static 'images/explore-image-021.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="types">
+                                <h4>Different Types</h4>
+                                <span>Over 304 Products</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Explore Area Ends ***** -->
+
+<!-- ***** Social Area Starts ***** -->
+<section class="section" id="social">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Products For Sales</h2>
+                    <span>Details to details is what makes Big Mart different from the other themes.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row images">
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Groceries</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img style="height: 170px;" src="{% static 'images/instagram-011.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Frozen</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img style="height: 170px;" src="{% static 'images/instagram-021.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Toys</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img style="height: 170px;" src="{% static 'images/instagram-031.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Makeup</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img style="height: 170px;" src="{% static 'images/instagram-04.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>veggies</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img style="height: 170px;" src="{% static 'images/instagram-051.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Accessories</h6>
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img style="height: 170px;" src="{% static 'images/instagram-061.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Social Area Ends ***** -->
+<section id="pred">
+    <div
+        style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fbfff2; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h2 style="align-items: center;text-align: center;padding-bottom: 20px;">Enter the details for Sales Prediction
+        </h2>
+        <form id="contact" method="post">
+            {% csrf_token %}
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px;">
+                <div style="flex: 0 0 48%; margin-bottom: 15px;">
+                    <input name="Item_Weight" type="text" placeholder="Item_Weight" required=""
+                        style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+                </div>
+                <div style="flex: 0 0 48%; margin-bottom: 15px;">
+                    <input name="Item_Fat_Content" type="text" placeholder="Item_Fat_Content" required=""
+                        style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+                </div>
+                <div style="flex: 0 0 48%; margin-bottom: 15px;">
+                    <input name="Item_Visibility" type="text" placeholder="Item_Visibility" required=""
+                        style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+                </div>
+                <div style="flex: 0 0 48%; margin-bottom: 15px;">
+                    <input name="Item_Type" type="text" placeholder="Item_Type" required=""
+                        style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+                </div>
+                <div style="flex: 0 0 48%; margin-bottom: 15px;">
+                    <input name="Item_MRP" type="text" placeholder="Item_MRP" required=""
+                        style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+                </div>
+                <div style="flex: 0 0 48%; margin-bottom: 15px;">
+                    <input name="Outlet_Size" type="text" placeholder="Outlet_Size" required=""
+                        style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit" id="form-submit"
+                    style="padding: 10px 20px; background-color: olive; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Predict</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+{% include "footer.html" %}
+{% endblock %}

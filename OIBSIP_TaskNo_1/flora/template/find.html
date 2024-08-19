@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css'%}" />
+
+    <!-- Bootstrap + Creative Studio main styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/creative-studio.css'%}" />
+    <link rel="icons" href="{% static 'assets/imgs/logo.png'%}" />
+</head>
+
+<body>
+    <section id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="form">
+                    <h6 class="section-title mb-4">Your Iris Flower</h6>
+                    <h6 class="section-subtitle">
+                        Measurement lenght in cm
+                    </h6>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg"
+                                placeholder="Sepal Lenght:{{SepalLength}}" name="sepl" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg"
+                                placeholder="Sepal width:{{SepalWidth}}" name="sepw" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg"
+                                placeholder="Petal Lenght:{{PetalLength}}" name="petl" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg"
+                                placeholder="Petal width:{{PetalWidth}}" name="petw" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Species:{{Species}}"
+                                name="petw" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">
+                            back
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

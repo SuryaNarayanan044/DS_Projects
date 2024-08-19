@@ -1,0 +1,61 @@
+{% extends "nav.html" %}
+{% block content %}
+
+{% load static %}
+
+<!-- ***** Main Banner Area Start ***** -->
+<div class="pa-ban " id="top">
+
+  <div class="inner-content">
+    <br><br><br>
+    <h2>Predicted Result</h2>
+
+  </div>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <!-- ***** Contact Area Starts ***** -->
+  <div
+    style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5e9cc; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+    <form id="contact" method="post">
+      {% csrf_token %}
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px;">
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="Item_Weight" type="text" placeholder="Item_Weight:{{Item_Weight}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="Item_Fat_Content" type="text" placeholder="Item_Fat_Content:{{Item_Fat_Content}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="Item_Visibility" type="text" placeholder="Item_Visibility:{{Item_Visibility}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="Item_Type" type="text" placeholder="Item_Type:{{Item_Type}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="Item_MRP" type="text" placeholder="Item_MRP:{{Item_MRP}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="Outlet_Size" type="text" placeholder="Outlet_Size:{{Outlet_Size}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+        <div style="flex: 0 0 48%; margin-bottom: 15px;">
+          <input name="prediction" type="text" placeholder="Prediction:{{prediction}}" required=""
+            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #333333; font-size: 16px;">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- ***** Contact Area Ends ***** -->
+  {% for i in messages %}
+  <script>alert("{{i}}")</script>
+  {% endfor %}
+
+  {% include "footer.html" %}
+  {% endblock %}

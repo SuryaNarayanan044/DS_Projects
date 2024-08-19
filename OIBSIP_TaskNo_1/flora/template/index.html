@@ -1,0 +1,269 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Start your development with Creative Studio landing page." />
+    <meta name="author" content="Devcrud" />
+    <title>Species Finder</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'assets/vendors/themify-icons/css/themify-icons.css'%}" />
+
+    <!-- Bootstrap + Creative Studio main styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/creative-studio.css'%}" />
+    <link rel="icon" href="{% static 'assets/imgs/logo.png'%}" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'assets/imgs/logo.png'%}"
+                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Find</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Page Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h6 class="subtitle">Scroll Down to Find</h6>
+            <h1 class="title">The Species Of IRIS</h1>
+        </div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Box -->
+
+    <!-- End of Box -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="{% static 'assets/imgs/new2.jpeg'%}" class="w-100 img-thumbnail mb-3" height="380"
+                        width="252" />
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <img src="{% static 'assets/imgs/new.jpg'%}" class="w-100 img-thumbnail mb-3" />
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <img src="{% static 'assets/imgs/new3.jpeg'%}" class="w-100 img-thumbnail mb-3" />
+                </div>
+
+                <div>
+                    <h6 class="section-subtitle mb-0"></h6>
+                    <h6 class="section-title" class="ir">Iris Flower</h6>
+                    <p>
+                        The Iris flower, renowned for its stunning beauty
+                        and scientific value, belongs to the genus Iris and
+                        features prominently in both botany and data
+                        science. With a captivating array of colors and
+                        forms, the Iris flower includes several notable
+                        species, particularly Setosa, Versicolor, and
+                        Virginica.
+                    </p>
+
+                    <div>
+                        <div class="flow">
+                            <div class="cen">
+                                <h6>
+                                    <strong>Iris Setosa</strong>
+                                </h6>
+                                <p>
+                                    Iris Setosa is easily identifiable due
+                                    to its smaller floral structures and
+                                    distinct features.It is often the first
+                                    species recognized in botanical studies.
+                                    This species is a favorite for its
+                                    simplicity and unique charm.
+                                </p>
+                            </div>
+
+                            <div class="cen">
+                                <h6><strong>Iris Versicolor</strong></h6>
+                                <p>
+                                    Iris Versicolor is known for its vibrant
+                                    and variable color palette, typically
+                                    displaying shades of blue and violet.
+                                    Its diverse appearances make it a
+                                    fascinating subject for researchers and
+                                    enthusiasts alike. This species
+                                    exemplifies the beauty of natural
+                                    variation.
+                                </p>
+                            </div>
+
+                            <div class="cen">
+                                <h6><strong>Iris Virginica</strong></h6>
+                                <p>
+                                    Iris Virginica stands out with its
+                                    larger flowers and deeper hues, often in
+                                    shades of violet or blue. This species
+                                    is notable for its robust size and
+                                    striking colors. It is admired for its
+                                    dramatic and bold presence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="form">
+                    <h6 class="section-title mb-4">
+                        Find the Species of your Flower
+                    </h6>
+                    <h6 class="section-subtitle">Measurement in cm</h6>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="float" class="form-control form-control-lg" placeholder="Sepal Lenght" required
+                                name="sepl" />
+                        </div>
+                        <div class="form-group">
+                            <input type="float" class="form-control form-control-lg" placeholder="Sepal width" required
+                                name="sepw" />
+                        </div>
+                        <div class="form-group">
+                            <input type="float" class="form-control form-control-lg" placeholder="Petal Lenght" required
+                                name="petl" />
+                        </div>
+                        <div class="form-group">
+                            <input type="float" class="form-control form-control-lg" placeholder="Petal width" required
+                                name="petw" />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">
+                            Find
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+
+    <section class="has-bg-img py-0">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">ABOUT US</h6>
+                        </li>
+                        <li class="list-body">
+                            <a href="#" class="logo">
+                                <img src="{% static 'assets/imgs/logo.png'%}"
+                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page" />
+                                <h6>Species Finder</h6>
+                            </a>
+                            <p>
+                                This Website helps to find the Speciesof
+                                Iris Flower with the measurement of their
+                                petals and sepals. With those information it
+                                find the speciesof the IRIS FLOWER.
+                            </p>
+                            <p class="mt-3">
+                                Copyright
+                                <script>
+                                    document.write(
+                                        new Date().getFullYear()
+                                    );
+                                </script>
+                                &copy; Surya Narayanan K
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">USEFUL LINKS</h6>
+                        </li>
+                        <li class="list-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#about">About</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#contact">Find</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">CONTACT INFO</h6>
+                        </li>
+                        <li class="list-body">
+                            <p>
+                                Contact us and we'll get back to you within
+                                24 hours.
+                            </p>
+                            <p>
+                                <i class="ti-location-pin"></i> 12345 Fake
+                                ST NoWhere AB Country
+                            </p>
+                            <p>
+                                <i class="ti-email"></i> species@finder.com
+                            </p>
+                            <div class="social-links">
+                                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="{% static 'assets/vendors/jquery/jquery-3.4.1.js'%}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.bundle.js'%}"></script>
+
+    <!-- bootstrap affix -->
+    <script src="{% static 'assets/vendors/bootstrap/bootstrap.affix.js'%}"></script>
+
+    <!-- Creative Studio js -->
+    <script src="{% static 'assets/js/creative-studio.js'%}"></script>
+</body>
+
+</html>

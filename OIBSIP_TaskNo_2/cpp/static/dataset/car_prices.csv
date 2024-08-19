@@ -1,0 +1,11 @@
+brand,model,year,mileage,horsepower,fuel_type,transmission,doors,price
+Toyota,Corolla,2020,15000,150,Gasoline,Automatic,4,20000
+Honda,Civic,2019,20000,140,Gasoline,Manual,4,18000
+Ford,Focus,2018,30000,160,Gasoline,Automatic,4,17000
+Chevrolet,Malibu,2021,10000,170,Gasoline,Automatic,4,22000
+BMW,320i,2020,12000,200,Gasoline,Automatic,4,30000
+Audi,A4,2019,25000,190,Gasoline,Automatic,4,28000
+Mercedes,C-Class,2021,8000,210,Gasoline,Automatic,4,35000
+Volkswagen,Passat,2017,35000,150,Diesel,Manual,4,16000
+Nissan,Altima,2018,27000,180,Gasoline,Automatic,4,19000
+Hyundai,Elantra,2022,5000,130,Gasoline,Automatic,4,21000
